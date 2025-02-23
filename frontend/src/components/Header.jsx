@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  const navigate = useNavigate();
   // Retrieve token and username from localStorage
   const token = localStorage.getItem("token");
   const username = localStorage.getItem("username");
+
+  const logout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("username");
+    navigate("/login"); // Redirect to login page after logout
+  };
 
   return (
     <header className="header">
@@ -26,17 +33,24 @@ const Header = () => {
         </div>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/how-it-works">How it works</Link></li>  {/* Link to HowItWorksPage */}
-            <li><Link to="/features">Features</Link></li>  {/* Link to FeaturesPage */}
-            <li><Link to="/about">About</Link></li>
+          <li><Link to="/how-it-works">How it works</Link></li>
+          <li><Link to="/features">Features</Link></li>
+          <li><Link to="/about">About</Link></li>
           <li><Link to="/minigames">MiniGames</Link></li>
           <li><Link to="/uploadecoactionpage">Upload Eco Action</Link></li>
         </ul>
         <div className="nav-button-container">
           {token && username ? (
-            <Link to="/minigames" className="nav-button">{username}</Link>
+            <>
+              <span className="username">{username}</span>
+              <button className="logout-button" onClick={logout}>
+                Logout
+              </button>
+            </>
           ) : (
-            <Link to="/login" className="nav-button">Login/Signup</Link>
+            <Link to="/login" className="nav-button">
+              Login/Signup
+            </Link>
           )}
         </div>
       </nav>

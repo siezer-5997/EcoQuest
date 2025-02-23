@@ -1,86 +1,171 @@
 /* Ensure the root container fills the full screen */
 #root, html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-  
-  .upload-eco-action-page {
-    min-height: 100vh;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .upload-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: -3rem auto 0;
-    text-align: center;
-    padding: 4rem 2rem;
-  }
-  
-  .upload-title {
-    font-size: 3rem;
-    font-weight: 600;
-    color: #2a4d3f;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-  }
-  
-  .image-upload label {
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
-  .image-upload input {
-    margin-top: 1rem;
-    padding: 0.5rem;
-  }
-  
-  .image-preview {
-    margin-top: 1.5rem;
-    max-width: 100%;
-    max-height: 300px;
-  }
-  
-  .description label {
-    font-size: 1.2rem;
-    color: #333;
-    margin-top: 1.5rem;
-  }
-  
-  .description textarea {
-    width: 100%;
-    height: 150px;
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-  }
-  
-  .submit-button {
-    margin-top: 1.5rem;
-    padding: 0.8rem 2rem;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background-color: #45a049;
-  }
-  
-  .ratings {
-    margin-top: 2rem;
-  }
-  
-  .rating {
-    margin-bottom: 1.5rem;
-  }
-  
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* Upload Eco Action Page Container */
+.upload-eco-action-page {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Upload Content Styling */
+.upload-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: -3rem auto 0;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.upload-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2a4d3f;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Image Upload */
+.image-upload label {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.image-upload input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.image-preview {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+/* Description */
+.description label {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+.description textarea {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Submit Button */
+.submit-button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Analysis Section */
+.analysis-section {
+  margin-top: 2rem;
+}
+
+.analysis-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.analysis-result {
+  font-size: 1.25rem;
+  color: #81b380;
+}
+
+/* Chat Section */
+.chat-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.chat-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.chat-history {
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.chat-message {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.chat-message.ai {
+  background-color: #e6ffe6;
+  color: #2a4d3f;
+}
+
+.chat-message.user {
+  background-color: #e6f0ff;
+  color: #2a4d3f;
+}
+
+.chat-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.chat-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #81b380;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background-color: #6ea26c;
+}
+
+/* Ratings */
+.ratings {
+  margin-top: 2rem;
+}
+
+.rating {
+  margin-bottom: 1.5rem;
+}
