@@ -40,3 +40,36 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.header {
+  position: relative;
+  width: 100%;
+  background: #cde5d3; /* Your green color */
+  overflow: hidden;     /* Ensures the wave doesn't exceed container */
+  /* Optional: make it taller or full-screen */
+  /* min-height: 100vh; */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+/* Position hero content in the center or top as needed */
+.hero-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* SVG Wave */
+.wave {
+  position: absolute;
+  bottom: 0;   /* Wave at bottom of the header */
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}

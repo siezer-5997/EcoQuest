@@ -1,0 +1,20 @@
+.minigames-page {
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  
+  .minigames-content {
+    padding: 2rem;
+  }
+  
+  .minigames-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .minigames-content p {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  

@@ -1,0 +1,139 @@
+/* Ensure the root container fills the full screen */
+#root, html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* Landing page container */
+.landing-page {
+  min-height: 250vh;
+  background-color: #fff;
+}
+
+/* Header styling */
+.header {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+
+/* Green wave styling */
+.green-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3c5744;
+  text-decoration: none;
+}
+
+/* Remove bullets and display links inline */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #3c5744;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+/* Style for the login/signup button */
+.nav-button-container .nav-button {
+  background-color: #81b380;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-button-container .nav-button:hover {
+  background-color: #6ea26c;
+}
+
+/* Main content spacing */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section styling */
+.hero-section {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.hero-info {
+  font-size: 1.25rem;
+  color: #666;
+  line-height: 2.5;
+  margin-bottom: 3rem;
+}
+
+.hero-info p {
+  margin: 0.5rem 0;
+}
+
+/* Call-to-Action Button styling */
+.cta-button {
+  background-color: #81b380;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #6ea26c;
+}
+
+/* Ensure html, body, and root container fill full height */
+html, body, #root {
+  height: 100%;
+}

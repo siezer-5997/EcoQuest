@@ -1,0 +1,75 @@
+.recycling-game {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  
+  .recycling-game h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .message {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #81b380;
+  }
+  
+  .game-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  .items-container,
+  .bins-container {
+    flex: 1 1 300px;
+    margin: 1rem;
+  }
+  
+  .items,
+  .bins {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .game-item {
+    padding: 1rem 1.5rem;
+    background-color: #a47676;
+    border-radius: 8px;
+    cursor: grab;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .bin {
+    padding: 1.5rem;
+    background-color: #cde5d3;
+    border: 2px dashed #81b380;
+    border-radius: 8px;
+    min-width: 150px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #3c5744;
+  }
+  
+  .message {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    /* Default color (for success messages) can be left as is */
+    color: #81b380;
+  }
+  
+  .message.error {
+    color: red;
+  }
+  

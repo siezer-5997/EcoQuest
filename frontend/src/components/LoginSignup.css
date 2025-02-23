@@ -1,0 +1,100 @@
+/* Basic reset (you may already have one in your global CSS) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the login/signup page */
+  .login-signup-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  /* Form container styling */
+  .form-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* Input group styling */
+  .input-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .input-group input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  /* Call-to-Action Button styling */
+  .cta-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #81b380;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 1rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #6ea26c;
+  }
+  
+  /* Toggle section styling */
+  .toggle-section {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: #646cff;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    font-size: inherit;
+  }
+  
+  .toggle-btn:hover {
+    color: #535bf2;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 1.5rem;
+    }
+  }
+  
