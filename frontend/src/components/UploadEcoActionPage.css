@@ -81,7 +81,9 @@
   background-color: #45a049;
 }
 
-/* Analysis Section */
+/* Existing CSS remains... */
+
+/* Analysis Section Styling */
 .analysis-section {
   margin-top: 2rem;
 }
@@ -92,10 +94,41 @@
   color: #333;
 }
 
+/* If analysisResult is parsed as JSON, display it in a nice format */
+.analysis-json {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.analysis-item {
+  margin-bottom: 0.5rem;
+}
+
+.analysis-key {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #2a4d3f;
+}
+
+.analysis-value {
+  color: #333;
+}
+
+/* Fallback styling if analysisResult is plain text */
 .analysis-result {
   font-size: 1.25rem;
-  color: #81b380;
+  color: #202b20;
+  background-color: rgba(145, 161, 143, 0.575);
+  padding: 2rem 2rem;
+  border-radius: 1.5rem;
 }
+
+
+
 
 /* Chat Section */
 .chat-section {
